@@ -1,0 +1,133 @@
+\documentclass[margin,line]{res}
+
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.0} 
+
+
+\begin{document}
+
+\name{Andre Mansour \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{4in}}
+3159 Mission Street  & {\it Cell:}  (650) 703-8808 \\  
+San Francisco, CA 94110 & {\it E-mail:}  {\ andrem8@uw.edu} \\              
+\end{tabular}
+
+\section{\sc Education}
+{\bf University of Washington}, Seattle, WA
+
+\vspace*{-4mm}
+B.B.A. in Accounting, 2011 - 2015 
+
+{\bf Saint Ignatius College Prepatory}, San Francisco, CA
+
+\vspace*{-4mm}
+High School Diploma with Honors, 2011 
+
+\section{\sc Professional Experience}
+
+{\bf Pricewaterhouse Coopers}, Risk Assurance Associate, 2015 - Present
+
+\vspace*{-4mm}San Francisco, CA
+
+\renewcommand\labelitemi{\tiny$\bullet$}
+
+\begin{itemize}[leftmargin=*]
+\item Performed IT and Business Process assessments to help clients evaluate how their risks are being managed and advise management on creative improvements to their internal controls on business processes and ERP system.
+\item Performed technical testing in areas such as implementations, data interfaces, automated configurations, calculations, and settings within ERP software 
+\item Analyze and write SQL Queries to export testing population (e.g. support tickets, list of transactions); Background in SQL includes familiarity with select-from-where statements, grouping and aggregations, pattern matching, subqueries
+\item Managed communication, instruction and review of work from the PwC Global Delivery Center (Argentina) for an engagement of over 2,000 hours.  
+\item Prepared internal dashboards to track audit progress, track client billings and to provide real time status updates for engagement managers.
+\item Performed analytical procedures to identify areas of high risk in the audit. Reduced scope of the audit and saved significant time and resources.  
+\item Volunteer Teacher with the PwC Earn Your Future Initiative. Recognized as an exemplary volunteer for consistent commitment to teaching.  
+\end{itemize}
+\vspace*{1.5mm}
+
+
+\vspace*{-3mm}
+{\bf Pricewaterhouse Coopers},  Core Assurance Rotation, Spring 2016
+
+\vspace*{-4mm}San Francisco, CA
+\begin{itemize}[leftmargin=*] 
+\item Performed substantive audit testing over dividend income, dividend receivable, non-domiciled cash reconciliations, interest income and principal amortization for an engagement with over 900+ funds.
+\item Worked extensively with Excel Pivot Tables, Vlookup, Index-Match, Concatenate, Sumif,Countif, Left, Right, Filter functions in order to perform substantive audit procedures. 
+\item Performed audit tie-outs for complex derivative positions for over 10+ brokers, 20+ funds and 10,000+ positions.
+\end{itemize}
+\vspace*{1.5mm}
+
+
+\vspace*{-3mm}
+{\bf Hashplex},  Accountant, January 2015 - June 2015
+
+\vspace*{-4mm}Seattle, WA
+\begin{itemize}[leftmargin=*]
+\item Prepared financial statements in Quickbooks for management and Angel investors
+\item Managed expenses and processed payroll for BitCoin Startup with over 500k seed funding
+\item Provided operational support to CEO and performed ad hoc analysis, tasks
+\item Developed understanding and knowledge of blockchain technology
+\end{itemize}
+\vspace*{6mm}
+
+
+\vspace*{-3mm}
+{\bf BDO},  Core Tax Services Intern, Summer 2014 
+
+\vspace*{-4mm}San Jose, CA
+\begin{itemize}[leftmargin=*]
+\item Prepared federal and multi-state tax returns for individuals, C corporations, S corporations, partnerships and trusts through Prosystem
+\end{itemize}
+\vspace*{1.5mm}
+
+
+\vspace*{-3mm}
+{\bf Twilio},  Operations Intern, Summer 2013 
+
+\vspace*{-4mm}San Francisco, CA
+\begin{itemize}[leftmargin=*]
+\item Provided level 1 Technical Support to customers through Zendesk.
+\item Suspended fraudulent accounts identified in the fraud metrics, refunded fraudulent transactions, and tracked estimated fraud loss.
+\item Performed weekly reconciliation between external payment ledger and internal accounting system to identify accounts improperly credited.
+\item Provided operational support to the sales team. Organized and submitted customer invoices.
+\item Developed an app with the Twilio API which allowed users to send an SMS text with weight, time, and number of drinks consumed and receive estimated blood alcohol content. The app was developed with Ruby on Sinatra and in developing the app, I leveraged developer resources such as Github, Coursera and Stackoverflow.  
+\end{itemize}
+
+\section{\sc Skills} 
+{\bf Computing Skills}:  Highly proficient in Excel, limited exposure to Python Data Analysis \& SQL
+\vspace*{-3mm}
+
+{\bf Other Computing Skills}: Google Cloud Software, MS Office, Latex
+\vspace*{-3mm}
+
+{\bf Misc Skills}: Open Water Diver Certified, First Aid and CPR Certified
+\vspace*{-3mm}
+
+\end{resume}
+\end{document}
