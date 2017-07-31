@@ -1,0 +1,127 @@
+\documentclass[margin,line]{res2}
+
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{color}
+\usepackage{tikz}
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{\makebox[7.2in][r]{%
+    \includegraphics[width=4.4cm,height=3.4cm,keepaspectratio]{Pwc-logo.png}}}}
+
+\oddsidemargin -.7in
+\evensidemargin -.3in{}
+\textwidth=6.4in
+\itemsep=-.25in
+\parsep=-.25  in
+\topmargin -1.03in
+\marginparwidth -.5in
+\parindent -.25in
+\textheight 485pt
+\paperheight = 485pt
+\definecolor{pwc-orange}{RGB}{235,140, 0} 
+\definecolor{white}{RGB}{255, 255, 255} 
+%\pagecolor{pwc-orange}
+
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{2in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{2in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \pdfpaperheight=8.5in
+      \pdfpaperwidth=8.5in
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+\usepackage{setspace}
+\usepackage[most]{tcolorbox}
+
+\tcbset{
+    frame code={}
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=pwc-orange,
+    colframe=pwc-orange,
+    width=8.7in,
+    enlarge left by=-42mm,
+    boxsep=15pt,
+    arc=0pt,outer arc=0pt,
+    }
+
+\renewcommand{\baselinestretch}{1.0} 
+
+
+\begin{document}
+\begin{resume}
+\begin{tcolorbox}
+{\textcolor{white}{\textbf{Andre Mansour, Experienced Associate} \vspace*{0in}}}
+\end{tcolorbox}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{2in}p{4in}}
+Three Embarcadero Center  & {\it Cell:}  (650) 703-8808 \\  
+San Francisco, CA 94111 & {\it E-mail:}  {\ andre.mansour@pwc.com} \\              
+\end{tabular}
+
+
+\section{\sc Relevent Experience}
+
+{\bf BlackRock}, Financial Audit
+
+\renewcommand\labelitemi{\tiny$\bullet$}
+
+\begin{itemize}[leftmargin=-.13in]
+\item Performed substantive audit testing over dividend income, dividend receivable, non-domiciled cash reconciliations, interest income and principal amortization for Blackrock Financial Group.
+\item Worked extensively with Excel Pivot Tables, Vlookup, Index-Match, Concatenate, Sumif,Countif, Left, Right, Filter functions in order to perform substantive audit procedures. 
+\end{itemize}
+\vspace*{1.5mm}
+
+{\bf Risk Assurance}, IT Process Assurance
+\begin{itemize}[leftmargin=-.13in]
+\item Performed IT and Business Process assessments to help clients evaluate their risks and advise management on improvements to internal business process. 
+\item Performed financial model of discounted cash flows and tax credits for solar array with Python.    
+\end{itemize}
+
+
+{\bf Risk Assurance}, Advanced Risk Compliance Analytics
+\begin{itemize}[leftmargin=-.13in]
+\item Performed IT and Business Process assessments to help clients evaluate their risks and advise management on improvements to internal business process. 
+\item Analyze and write SQL Queries to export client data; Background in SQL includes familiarity with select-from-where statements, grouping and aggregations, pattern matching, subqueries
+\item Created dashboards and data visualizations for healthcare providers and payers 
+\item Created dashboards and data visualizations for healthcare providers and payers for international healthcare provider.
+\item Performed financial model of discounted cash flows and tax credits for solar array with Python.    
+\end{itemize}
+\vspace*{1.5mm}
+
+\section{\sc Skills} 
+{\bf Computing Skills}:  Highly proficient in Excel, Experience with Python Data Analysis, Pandas, Tableau, PowerBI, Clickview, Unix \& SQL
+\vspace*{-3mm}
+
+{\bf Other Computing Skills}: Google Cloud Software, MS Office, Latex, Bloomberg Terminal
+\vspace*{-3mm}
+
+{\bf Misc Skills}: Open Water Diver Certified, First Aid and CPR Certified
+\vspace*{-3mm}
+
+\section{\sc Education}
+{\bf University of Washington}, Seattle, WA
+
+\vspace*{-4mm}
+B.B.A. in Accounting, 2011 - 2015 
+
+
+\end{resume}
+\end{document}
